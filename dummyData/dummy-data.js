@@ -31,4 +31,12 @@ export const Category = [
     id: 8,
     name: "Thai  Food",
   },
+  {
+    id: 9,
+    name: " German  Food",
+  },
+  {
+    id: 10,
+    name: "Asian  Food",
+  },
 ];
