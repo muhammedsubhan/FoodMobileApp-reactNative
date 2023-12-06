@@ -9,7 +9,6 @@ const MealsOverViewScreen = ({ route }) => {
   return (
     <>
       <View>
-        <Text>Meals OverView Screen</Text>
         <FlatList
           data={newMeals}
           renderItem={(item) => <FoodDetails item={item} />}

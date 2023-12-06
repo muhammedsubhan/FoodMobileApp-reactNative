@@ -6,7 +6,10 @@ export const Meals = [
       {
         foodId: 1,
         name: "Chicken Seekh Kabab",
-        imageName: "../../assets/images/Chicken-Seekh-kabab-PK.jpg",
+        duration: "30",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/Chicken-Seekh-kabab-PK.jpg"),
         desc: "Seekh is a metal skewer. Seekh Kabab or seekh kebab is a South Asian entree in which marinated beef mince is covered on the seekh to make a long cylindrical hollow kabab and the kababs are then barbecued on coal. Seekh kabab found its way to Pakistani cuisine through the influence of Mughlai Cuisine.",
         ingredients: [
           "Ground chicken with fat: Chicken grounded with white chicken fat is essential for making juicy seekh kababs. I used boneless chicken and grounded it with white fat around the chicken in a food processor.",
@@ -21,7 +24,10 @@ export const Meals = [
       {
         foodId: 2,
         name: "Pakistani Chicken Tikka",
-        imageName: "biryani.jpg",
+        duration: "40",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/Chicken-tikka-PK.jpg"),
         desc: "The tandoori chicken is often referred to as Chicken Tikka Thigh or Breast in Pakistan.So if the bone in the version of tandoori chicken is called chicken tikka in Pakistan then what is the boneless chicken tikka version called? It is called Chicken tikka boti or Chicken tikka kabab.",
         ingredients: [
           "Chicken: Use medium-sized chicken pieces that weigh 750 grams. (Live chicken weighs 1-1.25 kg) Smaller chicken has tender meat. The bigger bird would require longer marination of at least 8 hours.",
@@ -35,7 +41,10 @@ export const Meals = [
       {
         foodId: 3,
         name: "Chicken Chargha",
-        imageName: "biryani.jpg",
+        duration: "60",
+        complexity: "hard",
+        affordability: "affordable",
+        imageName: require("../assets/images/chicken-chargha-PK.jpg"),
         desc: "Get this Pakistani-style, spicy fried chicken recipe that requires very little active time. You first steam the Lahori chargha for the juiciest tender chicken followed by deep-frying for a crispy crust.",
         ingredients: [
           "Chicken: 1 kg to 1.25 kg skinless whole chicken works best for Chicken Chargha. Because the flesh of a smaller bird is tender and cooks quickly. If getting a live hen from the slaughterhouse, a chicken weighing around 1.5 kg to 1.75 kg.",
@@ -60,7 +69,10 @@ export const Meals = [
       {
         foodId: 1,
         name: "Indian Chicken Curry",
-        imageName: "biryani.jpg",
+        duration: "40",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/chicken-curry-IND.jpg"),
         desc: "This Indian-inspired creamy chicken curry recipe is similar to a curry I had in India. The aromatic spices and flavors are a delight to the senses! Delicious with fresh naan and basmati rice.",
         ingredients: [
           "3 tablespoons olive oil",
@@ -84,7 +96,10 @@ export const Meals = [
       {
         foodId: 2,
         name: "Red Lentil Curry",
-        imageName: "biryani.jpg",
+        duration: "55",
+        complexity: "normal",
+        affordability: "affordable",
+        imageName: require("../assets/images/red-lentil-curry-IND.jpg"),
         desc: "This red lentil curry is rich and hearty. It's great as a main meal rather than a side dish like the more traditional Indian dhal. Don't let the ingredient list faze you — this is an easy dish to make. This dish is excellent served with basmati rice.",
         ingredients: [
           "2 cups red lentils",
@@ -106,7 +121,10 @@ export const Meals = [
       {
         foodId: 3,
         name: "Indian Butter Chicken",
-        imageName: "biryani.jpg",
+        duration: "40",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/Butter-Chicken-IND.jpg"),
         desc: "This butter chicken recipe, or chicken makhani, is one of my favorite Indian dishes. It features a full-flavored sauce that complements the chicken well. It can be made as mild or spicy as you wish by adjusting the cayenne. Serve with basmati rice and naan bread.",
         ingredients: [
           "2 tablespoons peanut oil, divided",
@@ -132,7 +150,10 @@ export const Meals = [
       {
         foodId: 4,
         name: "Tandoori Chicken",
-        imageName: "biryani.jpg",
+        duration: "40",
+        complexity: "normal",
+        affordability: "affordable",
+        imageName: require("../assets/images/Tandoori-Chicken-IND.jpg"),
         desc: "Try this authentic tandoori chicken that's marinated in yogurt and spices, then cooked on the grill instead of a clay oven so you can make it at home. Serve with long-grain basmati rice, grilled veggies, roasted corn on the cob, and a cucumber salad.",
         ingredients: [
           "2 pounds chicken, cut into pieces",
@@ -159,8 +180,11 @@ export const Meals = [
       {
         foodId: 1,
         name: "Carrot Pasta Sauce ",
+        duration: "30",
+        complexity: "Simple",
+        affordability: "affordable",
         desc: " This is a quick and easy pasta recipe that you can eat anytime as breakfast or snack. The special thing about this pasta recipe is that carrots have been used along with tomatoes to make the sauce.",
-        imageName: "biryani.jpg",
+        imageName: require("../assets/images/Carrot-Pasta-Sauce-ITL.jpg"),
         ingredients: [
           "350 gms boiled pasta of your own choice",
           "250 gram carrots, chopped into small pieces",
@@ -177,7 +201,10 @@ export const Meals = [
       {
         foodId: 2,
         name: "Cheesy Pasta with Vegetables",
-        imageName: "biryani.jpg",
+        duration: "40",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/cheesy-vegetable-pasta-ITL.jpg"),
         desc: "This is a delicious pasta made with vegetables, cheesy and milk. This Cheesy Pasta can be a comforting meal for those when you don't want to spend so much time in the kitchen.",
         ingredients: [
           "2 Cups your favourite pasta",
@@ -193,7 +220,10 @@ export const Meals = [
       {
         foodId: 3,
         name: "Oats Pizza Crust",
-        imageName: "biryani.jpg",
+        duration: "30",
+        complexity: "normal",
+        affordability: "affordable",
+        imageName: require("../assets/images/Oat-Flour-Crust-ITL.jpg"),
         desc: "If you are looking for healthy pizza alternative, then try this amazing pizza recipe, which can be made with nutritious oats flour.",
         ingredients: [
           "1 Cup oats",
@@ -210,7 +240,10 @@ export const Meals = [
       {
         foodId: 4,
         name: "Chilli Oil Butter Garlic Pasta",
-        imageName: "biryani.jpg",
+        duration: "45",
+        complexity: "Simple",
+        affordability: "affordable",
+        imageName: require("../assets/images/chilli-oil-garlic-pasta-ITL.jpg"),
         desc: " Chilli oil butter garlic pasta recipe includes spaghetti which is generously tossed in spicy homemade chili oil and butter garlic sauce. This dish is a fusion of Italian and Asian cuisine, which will leave you drooling over the strong and exotic flavours. You can prepare this easily at home in 30 minutes.",
         ingredients: [
           "2 cups oil",
