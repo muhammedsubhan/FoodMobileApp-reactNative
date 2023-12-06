@@ -1,42 +1,42 @@
 export const Category = [
   {
     id: 1,
-    name: "Pakistani Food",
+    name: "Pakistan",
   },
   {
     id: 2,
-    name: "Indian Food",
+    name: "Indian",
   },
   {
     id: 3,
-    name: "Italian  Food",
+    name: "Italian",
   },
   {
     id: 4,
-    name: "French Food",
+    name: "French",
   },
   {
     id: 5,
-    name: "Japanese Food",
+    name: "Japanese",
   },
   {
     id: 6,
-    name: "American Food",
+    name: "American",
   },
   {
     id: 7,
-    name: "Turkey Food",
+    name: "Turkey",
   },
   {
     id: 8,
-    name: "Thai  Food",
+    name: "Thai",
   },
   {
     id: 9,
-    name: " German  Food",
+    name: " German",
   },
   {
     id: 10,
-    name: "Asian  Food",
+    name: "Asian",
   },
 ];

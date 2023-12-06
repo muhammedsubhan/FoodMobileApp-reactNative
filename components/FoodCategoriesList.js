@@ -1,6 +1,6 @@
 import { Platform, Pressable, StyleSheet, Text, View } from "react-native";
 
-const FoodCategoriesList = ({ title }) => {
+const FoodCategoriesList = ({ title, onPress }) => {
   return (
     <>
       <View style={styles.gridItem}>
@@ -10,6 +10,7 @@ const FoodCategoriesList = ({ title }) => {
             pressed ? styles.buttonPressed : null,
           ]}
           android_ripple={{ color: "#ccc" }}
+          onPress={onPress}
         >
           <View style={styles.innerContainer}>
             <Text style={styles.title}>{title}</Text>
