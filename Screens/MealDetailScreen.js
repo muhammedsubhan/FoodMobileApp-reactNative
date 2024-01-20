@@ -1,21 +1,33 @@
-import { useLayoutEffect } from "react";
+import { useContext, useLayoutEffect } from "react";
 import {  Image, ScrollView, StyleSheet, Text, View } from "react-native"
 import IconButton from "../components/IconButton";
+import { FavoriteContext } from "../store/context/fav-context";
 
 const MealDetailScreen = ({route,navigation}) => {
   const foodItem = route.params.foodItem;
+  const {addFav,favMeals,removeFav} = useContext(FavoriteContext)
 
- const saveHandler = () => {
-console.log("hello b")
- }
+  const isFavorite = !!(favMeals && favMeals.find(meal => meal.foodId === foodItem.foodId));
+  
+  
+  const saveHandler = () => {
+    if (isFavorite) {
+      removeFav(foodItem.foodId);
+    } else {
+      addFav(foodItem);
+    }
+  };
+  
+ 
+ 
 
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => {
-        return <IconButton  onPress={saveHandler}/>
+        return <IconButton icon={isFavorite ? "star" : "star-outline"}  onPress={saveHandler}/>
       }
     })
-  }, [])
+  }, [isFavorite])
 
   return (
  <ScrollView style={styles.scrollContainer}>

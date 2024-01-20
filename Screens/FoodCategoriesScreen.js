@@ -15,7 +15,7 @@ const FoodCategoriesScreen = ({ navigation }) => {
         renderItem={({ item }) => (
           <FoodCategoriesList
             title={item.name}
-            onPress={() => categoryHandlePress(item)}
+            onPress={() =>  categoryHandlePress(item)}
           />
         )}
         keyExtractor={(item) => item.id}

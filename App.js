@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MealsOverViewScreen from "./Screens/MealsOverViewScreen";
 import MealDetailScreen from "./Screens/MealDetailScreen";
+import FavoriteContextProvider from "./store/context/fav-context";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +14,8 @@ export default function App() {
     <>
       <StatusBar style="dark" />
       <NavigationContainer>
-        <Stack.Navigator>
+       <FavoriteContextProvider>
+       <Stack.Navigator>
           <Stack.Screen
             name="MealsCategories"
             component={FoodCategoriesScreen}
@@ -21,6 +23,7 @@ export default function App() {
           <Stack.Screen name="MealsOverview" component={MealsOverViewScreen} />
           <Stack.Screen name="MealsDetails" component={MealDetailScreen} />
         </Stack.Navigator>
+       </FavoriteContextProvider>
       </NavigationContainer>
     </>
   );
