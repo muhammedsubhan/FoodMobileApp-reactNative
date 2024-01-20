@@ -1,7 +1,22 @@
-import { Image, ScrollView, StyleSheet, Text, View } from "react-native"
+import { useLayoutEffect } from "react";
+import {  Image, ScrollView, StyleSheet, Text, View } from "react-native"
+import IconButton from "../components/IconButton";
 
-const MealDetailScreen = ({route}) => {
+const MealDetailScreen = ({route,navigation}) => {
   const foodItem = route.params.foodItem;
+
+ const saveHandler = () => {
+console.log("hello b")
+ }
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: () => {
+        return <IconButton  onPress={saveHandler}/>
+      }
+    })
+  }, [])
+
   return (
  <ScrollView style={styles.scrollContainer}>
    <View>

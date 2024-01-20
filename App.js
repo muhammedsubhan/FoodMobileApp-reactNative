@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet } from "react-native";
 import FoodCategoriesScreen from "./Screens/FoodCategoriesScreen";
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
