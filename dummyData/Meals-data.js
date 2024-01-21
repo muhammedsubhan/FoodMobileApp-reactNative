@@ -67,7 +67,7 @@ export const Meals = [
     category: "Indian",
     foods: [
       {
-        foodId: 1,
+        foodId: 4,
         name: "Indian Chicken Curry",
         duration: "40",
         complexity: "Simple",
@@ -94,7 +94,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 2,
+        foodId: 5,
         name: "Red Lentil Curry",
         duration: "55",
         complexity: "normal",
@@ -119,7 +119,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 3,
+        foodId: 6,
         name: "Indian Butter Chicken",
         duration: "40",
         complexity: "Simple",
@@ -148,7 +148,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 4,
+        foodId: 7,
         name: "Tandoori Chicken",
         duration: "40",
         complexity: "normal",
@@ -178,7 +178,7 @@ export const Meals = [
     category: "Italian",
     foods: [
       {
-        foodId: 1,
+        foodId: 8,
         name: "Carrot Pasta Sauce ",
         duration: "30",
         complexity: "Simple",
@@ -199,7 +199,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 2,
+        foodId: 9,
         name: "Cheesy Pasta with Vegetables",
         duration: "40",
         complexity: "Simple",
@@ -218,7 +218,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 3,
+        foodId: 10,
         name: "Oats Pizza Crust",
         duration: "30",
         complexity: "normal",
@@ -238,7 +238,7 @@ export const Meals = [
         ],
       },
       {
-        foodId: 4,
+        foodId: 11,
         name: "Chilli Oil Butter Garlic Pasta",
         duration: "45",
         complexity: "Simple",

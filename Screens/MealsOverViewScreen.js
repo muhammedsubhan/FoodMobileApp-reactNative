@@ -1,6 +1,5 @@
-import { FlatList, Text, View } from "react-native";
+import FoodList from "../components/FoodList/FoodList";
 import { Meals } from "../dummyData/Meals-data";
-import FoodDetails from "../components/FoodDetails";
 
 const MealsOverViewScreen = ({ route }) => {
   const categoryName = route.params.CategoryName;
@@ -8,15 +7,10 @@ const MealsOverViewScreen = ({ route }) => {
   const newMeals = Meals.filter((meal) => meal.category === categoryName);
   return (
     <>
-      <View>
-        <FlatList
-          data={newMeals}
-          renderItem={(item) => <FoodDetails item={item} />}
-          keyExtractor={(item) => item.id}
-        />
-      </View>
+    <FoodList newMeals={newMeals}/>
     </>
   );
 };
 
 export default MealsOverViewScreen;
+
